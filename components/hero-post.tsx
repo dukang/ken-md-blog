@@ -11,6 +11,8 @@ type Props = {
   excerpt: string
   author: Author
   slug: string
+  demo: {name: string}
+  type: any
 }
 
 const HeroPost = ({
@@ -20,6 +22,8 @@ const HeroPost = ({
   excerpt,
   author,
   slug,
+  demo,
+  type,
 }: Props) => {
   return (
     <section>
@@ -33,6 +37,9 @@ const HeroPost = ({
               <a className="hover:underline">{title}</a>
             </Link>
           </h3>
+          <div className="mb-4 md:mb-0 text-lg">
+            文章类型：{type}
+          </div>
           <div className="mb-4 md:mb-0 text-lg">
             <DateFormatter dateString={date} />
           </div>

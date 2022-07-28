@@ -11,6 +11,8 @@ type Props = {
   excerpt: string
   author: Author
   slug: string
+  demo: {name: string}
+  type: string
 }
 
 const PostPreview = ({
@@ -20,9 +22,11 @@ const PostPreview = ({
   excerpt,
   author,
   slug,
+  demo,
+  type,
 }: Props) => {
   return (
-    <div>
+    <div className='card'>
       <div className="mb-5">
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div>
@@ -33,6 +37,7 @@ const PostPreview = ({
       </h3>
       <div className="text-lg mb-4">
         <DateFormatter dateString={date} />
+        <div>类型: {type}</div>
       </div>
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
       <Avatar name={author.name} picture={author.picture} />

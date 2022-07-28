@@ -11,6 +11,10 @@ type PostType = {
     url: string
   }
   content: string
+  demo: {
+    name: string
+  }
+  type: string
 }
 
 export default PostType

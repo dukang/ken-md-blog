@@ -1,13 +1,25 @@
 import Link from 'next/link'
+import UnderlineLink from './links/UnderlineLink';
 
 const Header = () => {
   return (
-    <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8">
-      <Link href="/">
-        <a className="hover:underline">Blog</a>
-      </Link>
-      .
-    </h2>
+   <nav className='flex flex-wrap gap-4 items-center justify-center my-10'>
+      <UnderlineLink href='/'>
+        项目
+      </UnderlineLink>
+      | {' '}
+      <UnderlineLink href='/posts/about'>
+        个人简介
+      </UnderlineLink > {' '}
+      | {' '}
+      < UnderlineLink href="https://space.bilibili.com/588878976" >
+        GitHub
+      </UnderlineLink > {' '}
+      | {' '}
+      < UnderlineLink href="https://github.com/dukang" >
+        B站主页
+      </UnderlineLink > {' '}
+    </nav >
   )
 }
 

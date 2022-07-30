@@ -13,6 +13,7 @@ type Props = {
 }
 
 export default function Index({ allPosts }: Props) {
+  allPosts = allPosts.filter(post => post.type !== 'RESUME');
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
   let types = ['全部']

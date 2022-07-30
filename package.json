@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start -p 3002",
+    "start": "next start -p 3334",
     "typecheck": "tsc"
   },
   "dependencies": {

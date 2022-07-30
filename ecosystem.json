@@ -1,0 +1,13 @@
+{
+  "apps" : [
+    {
+      name     : "engine-demo",
+      max_memory_restart: "2048M",
+      script    : "npm start",
+      out_file : "./logs/vr_nova_out.log",
+      error_file : "./logs/vr_nova_error.log",
+      instances  : 1,
+      exec_mode  : "fork",
+    }
+  ]
+}

@@ -25,6 +25,7 @@ export default function Index({ allPosts }: Props) {
       <Layout>
         <Head>
           <title>Ken Blog</title>
+          <base target="_blank"></base>
         </Head>
         <Container>
           <Intro />

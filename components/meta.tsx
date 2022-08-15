@@ -4,6 +4,7 @@ import { CMS_NAME, HOME_OG_IMAGE_URL } from '../lib/constants'
 const Meta = () => {
   return (
     <Head>
+      <base target="_blank"></base>
       <link
         rel="apple-touch-icon"
         sizes="180x180"
